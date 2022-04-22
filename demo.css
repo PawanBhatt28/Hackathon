@@ -13,7 +13,6 @@
     top: 0;
     height: 80vh;
     width: 50vw;
-    /* position: absolute; */
 }
 
 .container-fluid {
@@ -24,19 +23,18 @@
     cursor: pointer;
 }
 .card {
-    height: 200px;
-    width: 50vw;
+    margin-top: 50px;
+    height: 300px;
+    width: 70vw;
 }
 .accept {
     display: flex;
     justify-content: space-around;
-    /* border: 3px solid black; */
     padding: 0;
     height: 20%;
 }
 
 .accept .acc {
-    /* border: 3px solid green; */
     background-color: lightgreen;
 
     width: 50%;
@@ -44,7 +42,6 @@
     padding: 10px 30px 0 45px;
 }
 .accept .dec {
-    /* border: 5px solid red; */
     background-color: lightcoral;
     width: 50%;
     padding: 10px 30px 0 45px;
@@ -55,4 +52,11 @@
 
 .hideIt {
     display: none;
+}
+
+
+.cardheading{
+    font-size: 30px;
+    color: green;
+    padding-bottom: 5px;
 }

@@ -187,24 +187,6 @@
     box-sizing: content-box;
   }
 
-  /*box */
-  body {
-    background: #e2e1e0;
-    text-align: center;
+.card-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
-  
-  .card {
-    background: #fff;
-    border: 2px solid black !important;
-    border-radius: 2px;
-    display: inline-block;
-    height: 300px;
-    margin: 1rem;
-    position: relative;
-    width: 304px;
-    padding:0;
-    box-sizing: border-box  ;
-  }
-
-  
-  
