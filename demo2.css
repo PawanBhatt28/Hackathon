@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    /* position: relative; */
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 80vh;
+    width: 50vw;
+    /* position: absolute; */
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-evenly;
+}
+.accept {
+    cursor: pointer;
+}
+.card {
+    height: 200px;
+    width: 50vw;
+}
+.accept {
+    display: flex;
+    justify-content: space-around;
+    /* border: 3px solid black; */
+    padding: 0;
+    height: 20%;
+}
+
+.accept .acc {
+    /* border: 3px solid green; */
+    background-color: lightgreen;
+
+    width: 50%;
+    height: 101%;
+    padding: 10px 30px 0 45px;
+}
+.accept .dec {
+    /* border: 5px solid red; */
+    background-color: lightcoral;
+    width: 50%;
+    padding: 10px 30px 0 45px;
+}
+.card .a {
+    display: block;
+}
+
+.hideIt {
+    display: none;
+}
