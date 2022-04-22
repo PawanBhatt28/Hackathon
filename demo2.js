@@ -1,4 +1,19 @@
 // Initialize and add the map
+let c = 1;
+
+function changeMap() {
+    const mapAdd = [
+        'https://www.google.com.qa/maps/d/u/0/embed?mid=10FZeNZd1o9xyLj7UZE2ZZ6rQcojVVVM7&ehbc=2E312F',
+        'https://www.google.com.qa/maps/d/u/0/embed?mid=1pdDezt7lGJI8iUREZMIaALFH3vfN4SA8&ehbc=2E312F',
+    ];
+    let map = document.querySelector('#map');
+    if (c % 2 == 0) {
+        map.querySelector('iframe').src = mapAdd[0];
+    } else {
+        map.querySelector('iframe').src = mapAdd[1];
+    }
+    c++;
+}
 function initMap() {
     // The location of Uluru
     console.log('Herer');

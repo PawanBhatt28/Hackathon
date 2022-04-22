@@ -56,3 +56,13 @@
 .hideIt {
     display: none;
 }
+.changebutton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: black;
+    margin: 20px;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 5px 2px 2px grey;
+}
