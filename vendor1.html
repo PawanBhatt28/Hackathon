@@ -6,18 +6,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="demo.css" />
-        <script src="demo.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
     </head>
+
     <body>
         <div class="container-fluid">
-            <h1>VendIT</h1>
             <div class="map-responsive" id="map">
                 <iframe
-                    src="https://www.google.com.qa/maps/d/u/0/embed?mid=1TCGgPJBrparS-6_0XhuRIrRWM01DUvaz&ehbc=2E312F"
+                    class="iframeClass"
+                    src="https://www.google.com.qa/maps/d/u/0/embed?mid=1pdDezt7lGJI8iUREZMIaALFH3vfN4SA8&ehbc=2E312F"
                     width="640"
                     height="480"
                 ></iframe>
             </div>
+
+            <div class="card" style="width: 18rem">
+                <div class="card-header">ORDERS</div>
+
+                <div class="orders a">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item 1</li>
+                        <li class="list-group-item">Item a</li>
+                        <li class="list-group-item">Item e</li>
+                    </ul>
+                </div>
+                <div class="orders b hideIt">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item af</li>
+                        <li class="list-group-item">Item aad</li>
+                        <li class="list-group-item">Item 3fe</li>
+                    </ul>
+                </div>
+                <div class="orders c hideIt">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item a1</li>
+                        <li class="list-group-item">Item az2</li>
+                        <li class="list-group-item">Item e21</li>
+                    </ul>
+                </div>
+                <div class="orders d hideIt">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item 121</li>
+                        <li class="list-group-item">Item asdga</li>
+                        <li class="list-group-item">Item e2a</li>
+                    </ul>
+                </div>
+                <div class="orders e hideIt">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item 211</li>
+                        <li class="list-group-item">Item av3a</li>
+                        <li class="list-group-item">Item e23</li>
+                    </ul>
+                </div>
+                <div class="accept">
+                    <div class="acc" onclick="accClick()">Accept</div>
+                    <div class="dec" onclick="decClick()">Decline</div>
+                </div>
+
+                <div class="oLeft">Orders Left : 5</div>
+            </div>
         </div>
+        <script src="demo.js"></script>
     </body>
 </html>
