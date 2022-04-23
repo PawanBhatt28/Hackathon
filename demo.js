@@ -48,7 +48,6 @@ function accClick() {
     let map = document.querySelector('#map');
     let oLeft = document.querySelector('.oLeft');
     oLeft.innerHTML = 'Orders Left : ' + orderLeft;
-    orderLeft--;
 
     let orderArray = document.querySelectorAll('.orders');
     orderArray[count].classList.add('hideIt');
@@ -65,16 +64,23 @@ function accClick() {
         'https://www.google.com.qa/maps/d/u/0/embed?mid=14swdl2EmnROpMDAgfyDI2mo1q-zCrvUw&ehbc=2E312F',
         'https://www.google.com.qa/maps/d/u/0/embed?mid=1TCGgPJBrparS-6_0XhuRIrRWM01DUvaz&ehbc=2E312F',
     ];
-    console.log(count);
-    if (count >= 0) {
+    // console.log(count);
+    if (count <= 4) {
         map.querySelector('iframe').src = mapArray[count];
-        
-    } else {
-        alert('All orders done!');
-        count = 0;
-        orderLeft = 4;
-        return;
+        console.log(count);
+        if (count >= 0) {
+            map.querySelector('iframe').src = mapArray[count];
+        } else {
+            alert('All orders done!');
+            count = 0;
+            orderLeft = 4;
+            // return 0;
+        }
+
+        console.log('Order Left ', orderLeft);
+        console.log('Count ', count);
+        orderLeft--;
+        count++;
+        // console.log(map.querySelector('iframe'));
     }
-    count++;
-    // console.log(map.querySelector('iframe'));
 }
