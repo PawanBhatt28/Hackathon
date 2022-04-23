@@ -1,5 +1,4 @@
 // Initialize and add the map
-
 let c = 1;
 
 function changeMap() {
