@@ -20,12 +20,12 @@
     color: #fff;
 }
 
-/*html {
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 6.5rem;
     scroll-behavior: smooth;
-}*/
+}
 
 .header-1 {
     display: flex;
