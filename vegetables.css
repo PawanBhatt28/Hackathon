@@ -1,3 +1,4 @@
+/*navbar*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 * {
     font-family: 'Nunito', sans-serif;
@@ -8,6 +9,7 @@
     outline: none;
     text-decoration: none !important;
     text-transform: capitalize;
+    transition: all .2s linear;
 }
 
 :root {
@@ -20,12 +22,17 @@
     color: #fff;
 }
 
-/*html {
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 6.5rem;
     scroll-behavior: smooth;
-}*/
+}
+
+.img{
+    height: 50% !important;
+    width: 50% !important;
+}
 
 .header-1 {
     display: flex;
@@ -182,11 +189,33 @@
         font-size: 4rem;
     }
 }
+/*navbar-end*/
 
-.selector-for-some-widget {
-    box-sizing: content-box;
+body {
+    padding: 40px 0;
   }
-
-.card-5 {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+  }
+  
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .grid > article img {
+    max-width: 100%;
+  }
+  
+  .grid .text {
+    padding: 20px;
+  }
+  
+  .btn{
+      background-color: #e03a3c !important;
+      border: none !important;
   }
