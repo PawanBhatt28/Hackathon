@@ -66,14 +66,15 @@ function accClick() {
         'https://www.google.com.qa/maps/d/u/0/embed?mid=1TCGgPJBrparS-6_0XhuRIrRWM01DUvaz&ehbc=2E312F',
     ];
     console.log(count);
-    if (count <= 4) {
+    if (count >= 0) {
         map.querySelector('iframe').src = mapArray[count];
-        count++;
+        
     } else {
         alert('All orders done!');
         count = 0;
         orderLeft = 4;
         return;
     }
+    count++;
     // console.log(map.querySelector('iframe'));
 }

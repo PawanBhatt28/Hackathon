@@ -56,13 +56,13 @@
 .hideIt {
     display: none;
 }
-.changebutton {
+/* .changebutton {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    color: black;
+    color: white;
     margin: 20px;
-    background-color: black;
+    background-color: white;
     cursor: pointer;
     box-shadow: 5px 2px 2px grey;
-}
+} */
